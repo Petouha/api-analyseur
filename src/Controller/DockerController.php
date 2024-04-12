@@ -23,4 +23,11 @@ class DockerController extends AbstractController
 
         return new JsonResponse($post);
     }
+    //create a new route with get method to test if my server is working, it's suppoosed to return a json response
+    #[Route('/cc', name: 'app_docker_get', methods: ['GET'])]
+    public function indexGet(Request $request): Response
+    {
+        $data = ['message' => 'Hello World'];
+        return new JsonResponse($data);
+    }
 }
