@@ -93,7 +93,7 @@ function analyse_simple($url) {
     $curl = curl_init();
 
     // Set curl options
-    curl_setopt($curl, CURLOPT_URL, 'http://host.docker.internal:8000/api/docker');
+    curl_setopt($curl, CURLOPT_URL, 'http://host.docker.internal:8000/resultat');
     curl_setopt($curl, CURLOPT_POST, 1);
     curl_setopt($curl, CURLOPT_POSTFIELDS, $resultat);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
