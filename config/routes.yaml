@@ -4,7 +4,6 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-app_docker:
-    controller: App\Controller\DockerController::index
-    path: '/api/docker'
-    methods: ['POST']
+api_routes:
+  path: '/api'
+  controller: App\Controller\DockerController::index
